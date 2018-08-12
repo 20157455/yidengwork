@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS做彩色小雨伞</title>
+    <style>
+        #div1{
+            position:relative;
+            background-color:red;
+            width:100px;
+            height:100px;
+            border-radius:90% 90% 0 0/180% 180% 0 0;
+            transform-style:preserve-3d;
+            -webkit-transform-style:preserve-3d;
+
+            perspective:10px;
+            -webkit-perspective:10px;
+            box-shadow:
+                30px 0px 0 -14px blue inset,
+                120px 0px 0 -90px yellow inset,
+                510px 0px 0 -466px green inset,
+                -30px 0px 0 -14px blue inset,
+                -120px 0px 0 -90px yellow inset
+                ;
+            
+
+            }
+            #div1:after{
+            content:'';
+            position:absolute;
+            width:10px;
+            height:70px;
+            background-color:black;
+            bottom:-70px;  
+            left:43px;
+            }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>
