@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QA测试作业</title>
+    <script src="https://cdn.bootcss.com/systemjs/0.21.3/system-production.src.js"></script>
+</head>
+<body>
+    <div id="praise"></div>
+    <script>
+        System.import('./main.js').then(function(m){
+            console.log(new m.q().es6); // yay
+        })
+    </script>
+</body>
+</html>
