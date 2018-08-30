@@ -1,6 +1,8 @@
 import $ from 'jquery'
 
-$(function(){
+
+
+
     //点赞父类
     class PraiseButton{
         constructor(){
@@ -59,7 +61,7 @@ $(function(){
         width:'100px',
         height:'100px'
     })
-})
+
 
 export class q {
     constructor() {
